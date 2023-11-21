@@ -1,0 +1,198 @@
+html {
+    height: 100%;
+    margin: 0 auto;
+}
+
+body {
+    text-align: center;
+    background-image: url("../images/nationalparks-vintage-cropped.jpg");
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    background-position: center 0;
+}
+
+.container {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 30px;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    text-shadow:
+        -1px -1px 0 #120d01,
+        1px -1px 0 #120d01,
+        -1px 1px 0 #120d01,
+        1px 1px 0 #120d01;
+}
+
+.jumbotron {
+    /* opacity: 0.5; */
+    background: rgb(0, 0, 0, 0.5) !important;
+    border: 2px solid #094669;
+    max-width: 992px;
+    margin: 0 auto;
+}
+
+h1 {
+    background: rgb(0, 0, 0) !important;
+    text-decoration-color: #105975;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    animation: pulsate 0.11s ease-in-out infinite alternate;
+    border: 0.2rem solid #fff;
+    border-radius: 2rem;
+    padding: 0.4em;
+    box-shadow: 0 0 .2rem #fff,
+        0 0 .2rem #fff,
+        0 0 2rem #bc13fe,
+        0 0 0.8rem #bc13fe,
+        0 0 2.8rem #bc13fe,
+        inset 0 0 1.3rem #bc13fe;
+
+}
+
+#welcome {
+    width: 450px;
+    display: inline-block;
+    background-color: rgb(0, 0, 0, 0.4);
+    border-radius: 30px;
+    ;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 35px;
+    color: #b1f9c0;
+}
+
+h4 {
+    margin-bottom: 0px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #d19cf0;
+    animation: blink linear .7s infinite;
+}
+
+h5 {
+    font-size: 25px;
+}
+
+h6 {
+    margin-bottom: 0px;
+    font-size: 20px;
+    line-height: 150%;
+}
+
+#lasth6 {
+    margin-bottom: 20px;
+}
+
+#currentWord {
+    font-size: 30px;
+    letter-spacing: 4px;
+    color: #1e89a9;
+    background-color: rgb(0, 0, 0);
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.varColor {
+    color: #b1c6f9;
+}
+
+/* .noBlink {
+    visibility: hidden;
+} */
+h4:hover {
+    animation: none;
+}
+
+.noBlink {
+    /* visibility: hidden; */
+    animation: none;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: .5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+@keyframes pulsate {
+    100% {
+        /* Larger blur radius */
+        text-shadow:
+            0 0 4px #fff,
+            0 0 11px #fff,
+            0 0 19px #fff,
+            0 0 40px #00ffff,
+            0 0 80px #00ffff,
+            0 0 90px #00ffff,
+            0 0 100px #00ffff,
+            0 0 150px #00ffff;
+    }
+
+    0% {
+        /* A slightly smaller blur radius */
+        text-shadow:
+            0 0 4px #fff,
+            0 0 10px #fff,
+            0 0 18px #fff,
+            0 0 38px #00ffff,
+            0 0 73px #00ffff,
+            0 0 80px #00ffff,
+            0 0 94px #00ffff,
+            0 0 140px #00ffff;
+    }
+}
+
+#block {
+    border-radius: 130px;
+    background-color: rgb(0, 0, 0, 0.5);
+    box-shadow: 0 0 .4rem #ff0404;
+    margin: 40px 0px 50px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+#worddiv {
+    text-align: center;
+    margin: auto;
+    display: inline-block;
+}
+
+#wordh5 {
+    display: inline-block;
+}
+
+#imgToShow {
+    position: absolute;
+    /* visibility: hidden; */
+    background-color: rgb(0, 0, 0, 0.9);
+    border-radius: 50%;
+    margin: 20px auto 20px auto;
+    top: 100px;
+    height: 150px;
+    width: 150px;
+}
+
+#span {
+    padding-top: 60px;
+    vertical-align: middle;
+}
+
+#lose {
+    visibility: hidden;
+    color: #b1f9c0;
+    background-color: black;
+    text-decoration: wavy;
+}
